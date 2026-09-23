@@ -1,56 +1,690 @@
 [
-  {
-      "name": "📺电视直播",
-      "api": "https://tv.iill.top/m3u/Gather",
-      "type": 10,
-      "remark": "来自 YanG-1989 大佬 https://github.com/YanG-1989"
-  },
-  {
-      "name": "🎥网络直播",
-      "api": "https://m.iill.top/Live.m3u",
-      "type": 10,
-      "remark": "来自 YanG-1989 大佬 https://github.com/YanG-1989"
-  },
-  {
-      "name": "🚴‍♂️体育直播",
-      "api": "https://tv.iill.top/m3u/Sport",
-      "type": 10,
-      "remark": "来自 YanG-1989 大佬 https://github.com/YanG-1989"
-  },
-  {
-      "name": "🐯虎牙一起看",
-      "api": "https://sub.ottiptv.cc/huyayqk.m3u",
-      "type": 10,
-      "remark": "来自 Mursor 大佬 https://github.com/mursor1985"
-  },
-  {
-      "name": "🐟斗鱼一起看",
-      "api": "https://sub.ottiptv.cc/douyuyqk.m3u",
-      "type": 10,
-      "remark": "来自 Mursor 大佬 https://github.com/mursor1985"
-  },
-  {
-      "name": "🔄YY轮播",
-      "api": "https://sub.ottiptv.cc/yylunbo.m3u",
-      "type": 10,
-      "remark": "来自 Mursor 大佬 https://github.com/mursor1985"
-  },
-  {
-      "name": "📺哔哩直播",
-      "api": "https://sub.ottiptv.cc/bililive.m3u",
-      "type": 10,
-      "remark": "来自 Mursor 大佬 https://github.com/mursor1985"
-  },
-  {
-      "name": "📡范明明IPv6",
-      "api": "https://cdn.jsdelivr.net/gh/fanmingming/live@refs/heads/main/tv/m3u/ipv6.m3u",
-      "type": 10,
-      "remark": "来自 范明明 大佬 https://github.com/fanmingming"
-  },
-  {
-      "name": "🛰️Govin",
-      "api": "https://cdn.jsdelivr.net/gh/Guovin/iptv-api@gd/output/result.m3u",
-      "type": 10,
-      "remark": "来自 Guovin 大佬 https://github.com/Guovin"
-  }
+    {
+      "name": "直播6图标",
+      "type": 0,
+      "url": "http://x.xinsite.top/tv.m3u",
+      "playerType": 2,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://x.xinsite.top:5688/index.php?ch={name}&date={date}",
+      "logo": "./yaya.jpg",
+      "timeout": 0,
+      "catchup": {
+        "type": "append",
+        "source": "?livemode=4&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+      },
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "直播6图标-IJK",
+      "type": 0,
+      "url": "http://x.xinsite.top/tv.m3u",
+      "playerType": 1,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://x.xinsite.top:5688/index.php?ch={name}&date={date}",
+      "logo": "./yaya.jpg",
+      "timeout": 0,
+      "catchup": {
+        "type": "append",
+        "source": "?livemode=4&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+      },
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "自建聚合62",
+      "type": 0,
+      "url": "http://192.168.6.2:5688/tv.m3u?url=tv62",
+      "playerType": 2,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://192.168.6.2:5688/index.php?ch={name}&date={date}",
+      "logo": "./yaya.jpg",
+      "timeout": 0,
+      "catchup": {
+        "type": "append",
+        "source": "?livemode=4&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+      },
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "自建聚合62-ijk",
+      "type": 0,
+      "url": "http://192.168.6.2:5688/tv.m3u?url=tv62",
+      "playerType": 1,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://192.168.6.2:5688/index.php?ch={name}&date={date}",
+      "logo": "./yaya.jpg",
+      "timeout": 0,
+      "catchup": {
+        "type": "append",
+        "source": "?livemode=4&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+      },
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "自建聚合V4",
+      "type": 0,
+      "url": "https://epg.xinsite.top/tv.m3u?url=tv4",
+      "playerType": 2,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://epg.xinsite.top/index.php?ch={name}&date={date}",
+      "logo": "./yaya.jpg",
+      "timeout": 0,
+      "catchup": {
+        "type": "append",
+        "source": "?livemode=4&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+      },
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "自建聚合V4-IJK",
+      "type": 0,
+      "url": "https://epg.xinsite.top/tv.m3u?url=tv4",
+      "playerType": 1,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://epg.xinsite.top/index.php?ch={name}&date={date}",
+      "logo": "./yaya.jpg",
+      "timeout": 0,
+      "catchup": {
+        "type": "append",
+        "source": "?livemode=4&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+      },
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "自建聚合",
+      "type": 0,
+      "url": "http://x.xinsite.top:5688/tv.m3u",
+      "playerType": 2,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://x.xinsite.top:5688/index.php?ch={name}&date={date}",
+      "logo": "./yaya.jpg",
+      "timeout": 0,
+      "catchup": {
+        "type": "append",
+        "source": "?livemode=4&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+      },
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "自建聚合-IJK",
+      "type": 0,
+      "url": "http://x.xinsite.top:5688/tv.m3u",
+      "playerType": 1,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://x.xinsite.top:5688/index.php?ch={name}&date={date}",
+      "logo": "./yaya.jpg",
+      "timeout": 0,
+      "catchup": {
+        "type": "append",
+        "source": "?livemode=4&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+      },
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "直播图标-V4",
+      "type": 0,
+      "url": "https://www.xinsite.top/tv4.m3u",
+      "playerType": 2,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://epg.xinsite.top/index.php?ch={name}&date={date}",
+      "logo": "./yaya.jpg",
+      "timeout": 0,
+      "catchup": {
+        "type": "append",
+        "source": "?livemode=4&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+      },
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "直播图标IJK-V4",
+      "type": 0,
+      "url": "https://www.xinsite.top/tv4.m3u",
+      "playerType": 1,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://epg.xinsite.top/index.php?ch={name}&date={date}",
+      "logo": "./yaya.jpg",
+      "timeout": 0,
+      "catchup": {
+        "type": "append",
+        "source": "?livemode=4&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+      },
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "重庆联通",
+      "type": 0,
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/jia070310/4K-IPTV-M3U/main/m3u/%E9%87%8D%E5%BA%86%E8%81%94%E9%80%9A.m3u",
+      "playerType": 2,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://x.xinsite.top:5688/index.php?ch={name}&date={date}",
+      "logo": "./yaya.jpg",
+      "timeout": 0,
+      "catchup": {
+        "type": "append",
+        "source": "?livemode=4&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+      },
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "重庆联通-IJK",
+      "type": 0,
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/jia070310/4K-IPTV-M3U/main/m3u/%E9%87%8D%E5%BA%86%E8%81%94%E9%80%9A.m3u",
+      "playerType": 1,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://x.xinsite.top:5688/index.php?ch={name}&date={date}",
+      "logo": "./yaya.jpg",
+      "timeout": 0,
+      "catchup": {
+        "type": "append",
+        "source": "?livemode=4&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+      },
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "北京联通",
+      "type": 0,
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/jia070310/4K-IPTV-M3U/main/m3u/%E5%8C%97%E4%BA%AC%E8%81%94%E9%80%9A.m3u",
+      "playerType": 2,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://x.xinsite.top:5688/index.php?ch={name}&date={date}",
+      "logo": "./yaya.jpg",
+      "timeout": 0,
+      "catchup": {
+        "type": "append",
+        "source": "?livemode=4&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+      },
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "北京联通-IJK",
+      "type": 0,
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/jia070310/4K-IPTV-M3U/main/m3u/%E5%8C%97%E4%BA%AC%E8%81%94%E9%80%9A.m3u",
+      "playerType": 1,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://x.xinsite.top:5688/index.php?ch={name}&date={date}",
+      "logo": "./yaya.jpg",
+      "timeout": 0,
+      "catchup": {
+        "type": "append",
+        "source": "?livemode=4&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+      },
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "天津联通",
+      "type": 0,
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/jia070310/4K-IPTV-M3U/main/m3u/%E5%A4%A9%E6%B4%A5%E8%81%94%E9%80%9A.m3u",
+      "playerType": 2,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://x.xinsite.top:5688/index.php?ch={name}&date={date}",
+      "logo": "./yaya.jpg",
+      "timeout": 0,
+      "catchup": {
+        "type": "append",
+        "source": "?livemode=4&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+      },
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "天津联通-IJK",
+      "type": 0,
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/jia070310/4K-IPTV-M3U/main/m3u/%E5%A4%A9%E6%B4%A5%E8%81%94%E9%80%9A.m3u",
+      "playerType": 1,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://x.xinsite.top:5688/index.php?ch={name}&date={date}",
+      "logo": "./yaya.jpg",
+      "timeout": 0,
+      "catchup": {
+        "type": "append",
+        "source": "?livemode=4&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+      },
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "组播图标",
+      "type": 0,
+      "url": "https://www.xinsite.top/zubo/tv.m3u",
+      "playerType": 2,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://x.xinsite.top:5688/index.php?ch={name}&date={date}",
+      "logo": "./yaya.jpg",
+      "timeout": 0,
+      "catchup": {
+        "type": "append",
+        "source": "?livemode=4&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+      },
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "组播图标-IJK",
+      "type": 0,
+      "url": "https://www.xinsite.top/zubo/tv.m3u",
+      "playerType": 1,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://x.xinsite.top:5688/index.php?ch={name}&date={date}",
+      "logo": "./yaya.jpg",
+      "timeout": 0,
+      "catchup": {
+        "type": "append",
+        "source": "?livemode=4&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+      },
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "大佬直播",
+      "type": 0,
+      "url": "https://live.ottiptv.cc/iptv.m3u?userid=7664369746&sign=adaa3bbe61645daae884aacf822ef6e250244028d60c83c9da9a57bcd974526d2975e8b668a3a435510f9fced115ab862bb40eb88b6123b522bed4a82f306e13aa07182c79a7fa&auth_token=1f89b6b477cea1a93673a826678af529",
+      "playerType": 2,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://x.xinsite.top:5688/index.php?ch={name}&date={date}",
+      "logo": "./yaya.jpg",
+      "timeout": 0,
+      "catchup": {
+        "type": "append",
+        "source": "?livemode=4&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+      },
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "大佬直播-IJK",
+      "type": 0,
+      "url": "https://live.ottiptv.cc/iptv.m3u?userid=7664369746&sign=adaa3bbe61645daae884aacf822ef6e250244028d60c83c9da9a57bcd974526d2975e8b668a3a435510f9fced115ab862bb40eb88b6123b522bed4a82f306e13aa07182c79a7fa&auth_token=1f89b6b477cea1a93673a826678af529",
+      "playerType": 1,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://x.xinsite.top:5688/index.php?ch={name}&date={date}",
+      "logo": "./yaya.jpg",
+      "timeout": 0,
+      "catchup": {
+        "type": "append",
+        "source": "?livemode=4&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+      },
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "直播62图标",
+      "type": 0,
+      "url": "http://192.168.6.2/tv62.m3u",
+      "playerType": 2,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://192.168.6.2:5688/index.php?ch={name}&date={date}",
+      "logo": "./yaya.jpg",
+      "timeout": 0,
+      "catchup": {
+        "type": "append",
+        "source": "?livemode=4&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+      },
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "直播62-ijk",
+      "type": 0,
+      "url": "http://192.168.6.2/tv62.m3u",
+      "playerType": 1,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://192.168.6.2:5688/index.php?ch={name}&date={date}",
+      "logo": "./yaya.jpg",
+      "timeout": 0,
+      "catchup": {
+        "type": "append",
+        "source": "?livemode=4&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+      },
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "直播图标-V4",
+      "type": 0,
+      "url": "https://www.xinsite.top/tv4.m3u",
+      "playerType": 2,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://epg.xinsite.top/index.php?ch={name}&date={date}",
+      "logo": "./yaya.jpg",
+      "timeout": 0,
+      "catchup": {
+        "type": "append",
+        "source": "?livemode=4&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+      },
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "直播图标IJK-V4",
+      "type": 0,
+      "url": "https://www.xinsite.top/tv4.m3u",
+      "playerType": 1,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://epg.xinsite.top/index.php?ch={name}&date={date}",
+      "logo": "./yaya.jpg",
+      "timeout": 0,
+      "catchup": {
+        "type": "append",
+        "source": "?livemode=4&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+      },
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "本机直播V6",
+      "type": 0,
+      "url": "https://www.xinsite.top/benji.m3u",
+      "playerType": 2,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://x.xinsite.top:5688/index.php?ch={name}&date={date}",
+      "logo": "./yaya.jpg",
+      "timeout": 0,
+      "catchup": {
+        "type": "append",
+        "source": "?livemode=4&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+      },
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "本机直播V6-IJK",
+      "type": 0,
+      "url": "https://www.xinsite.top/benji.m3u",
+      "playerType": 1,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://x.xinsite.top:5688/index.php?ch={name}&date={date}",
+      "logo": "./yaya.jpg",
+      "timeout": 0,
+      "catchup": {
+        "type": "append",
+        "source": "?livemode=4&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+      },
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "本机直播-V4",
+      "type": 0,
+      "url": "https://www.xinsite.top/benji4.m3u",
+      "playerType": 2,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://epg.xinsite.top/index.php?ch={name}&date={date}",
+      "logo": "./yaya.jpg",
+      "timeout": 0,
+      "catchup": {
+        "type": "append",
+        "source": "?livemode=4&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+      },
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "本机直播IJK-V4",
+      "type": 0,
+      "url": "https://www.xinsite.top/benji4.m3u",
+      "playerType": 1,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://epg.xinsite.top/index.php?ch={name}&date={date}",
+      "logo": "./yaya.jpg",
+      "timeout": 0,
+      "catchup": {
+        "type": "append",
+        "source": "?livemode=4&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+      },
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "直播坚果",
+      "type": 0,
+      "url": "https://39730458%40qq.com:anmjt8tq3537es8v@dav.jianguoyun.com/dav/pg/tv.m3u",
+      "playerType": 2,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://epg.xinsite.top/index.php?ch={name}&date={date}",
+      "logo": "https://39730458%40qq.com:anmjt8tq3537es8v@dav.jianguoyun.com/dav/pg/tvlogo/{name}.png",
+      "timeout": 0,
+      "catchup": {
+        "type": "append",
+        "source": "?livemode=4&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+      },
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "直播坚果IJK",
+      "type": 0,
+      "url": "https://39730458%40qq.com:anmjt8tq3537es8v@dav.jianguoyun.com/dav/pg/tv.m3u",
+      "playerType": 1,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://epg.xinsite.top/index.php?ch={name}&date={date}",
+      "logo": "https://39730458%40qq.com:anmjt8tq3537es8v@dav.jianguoyun.com/dav/pg/tvlogo/{name}.png",
+      "timeout": 0,
+      "catchup": {
+        "type": "append",
+        "source": "?livemode=4&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+      },
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "虎牙直播6",
+      "type": 0,
+      "url": "http://x.xinsite.top:35455/huyayqk.m3u?url=http://x.xinsite.top:35455",
+      "playerType": 2,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://x.xinsite.top:5688/index.php?ch={name}&date={date}",
+      "logo": "http://x.xinsite.top/tvlogo/{name}.png",
+      "timeout": 0,
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "哔哩直播6",
+      "type": 0,
+      "url": "http://x.xinsite.top:35455/bililive.m3u?url=http://x.xinsite.top:35455",
+      "playerType": 2,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://x.xinsite.top:5688/index.php?ch={name}&date={date}",
+      "logo": "http://x.xinsite.top/tvlogo/{name}.png",
+      "timeout": 0,
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "斗鱼直播6",
+      "type": 0,
+      "url": "http://x.xinsite.top:35455/douyuyqk.m3u?url=http://x.xinsite.top:35455",
+      "playerType": 2,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://x.xinsite.top:5688/index.php?ch={name}&date={date}",
+      "logo": "http://x.xinsite.top/tvlogo/{name}.png",
+      "timeout": 0,
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "YY轮播6",
+      "type": 0,
+      "url": "http://x.xinsite.top:35455/yylunbo.m3u?url=http://x.xinsite.top:35455",
+      "playerType": 2,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://x.xinsite.top:5688/index.php?ch={name}&date={date}",
+      "logo": "http://x.xinsite.top/tvlogo/{name}.png",
+      "timeout": 0,
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "哔哩直播-62",
+      "type": 0,
+      "url": "http://192.168.6.2:35455/bililive.m3u?url=http://192.168.6.2:35455",
+      "playerType": 2,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://192.168.6.2:5688/index.php?ch={name}&date={date}",
+      "logo": "http://192.168.6.2/tvlogo/{name}.png",
+      "timeout": 0,
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "虎牙直播外网",
+      "type": 0,
+      "url": "http://iptv.xinsite.top/huyayqk.m3u?url=http://iptv.xinsite.top",
+      "playerType": 2,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://x.xinsite.top:5688/index.php?ch={name}&date={date}",
+      "logo": "http://x.xinsite.top/tvlogo/{name}.png",
+      "timeout": 0,
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "哔哩直播外网",
+      "type": 0,
+      "url": "http://iptv.xinsite.top/huyayqk.m3u?url=http://iptv.xinsite.top",
+      "playerType": 2,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://x.xinsite.top:5688/index.php?ch={name}&date={date}",
+      "logo": "http://x.xinsite.top/tvlogo/{name}.png",
+      "timeout": 0,
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "斗鱼直播外网",
+      "type": 0,
+      "url": "http://iptv.xinsite.top/huyayqk.m3u?url=http://iptv.xinsite.top",
+      "playerType": 2,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://x.xinsite.top:5688/index.php?ch={name}&date={date}",
+      "logo": "http://x.xinsite.top/tvlogo/{name}.png",
+      "timeout": 0,
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "YY轮播外网",
+      "type": 0,
+      "url": "http://iptv.xinsite.top/huyayqk.m3u?url=http://iptv.xinsite.top",
+      "playerType": 2,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://x.xinsite.top:5688/index.php?ch={name}&date={date}",
+      "logo": "http://x.xinsite.top/tvlogo/{name}.png",
+      "timeout": 0,
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "哔哩直播外网",
+      "type": 0,
+      "url": "http://iptv.xinsite.top/huyayqk.m3u?url=http://iptv.xinsite.top",
+      "playerType": 2,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://192.168.6.2:5688/index.php?ch={name}&date={date}",
+      "logo": "http://192.168.6.2/tvlogo/{name}.png",
+      "timeout": 0,
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "斗鱼直播-62",
+      "type": 0,
+      "url": "http://192.168.6.2:35455/douyuyqk.m3u?url=http://192.168.6.2:35455",
+      "playerType": 2,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://192.168.6.2:5688/index.php?ch={name}&date={date}",
+      "logo": "http://192.168.6.2/tvlogo/{name}.png",
+      "timeout": 0,
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "YY轮播-62",
+      "type": 0,
+      "url": "http://192.168.6.2:35455/yylunbo.m3u?url=http://192.168.6.2:35455",
+      "playerType": 2,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://192.168.6.2:5688/index.php?ch={name}&date={date}",
+      "logo": "http://192.168.6.2/tvlogo/{name}.png",
+      "timeout": 0,
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "卫视直播",
+      "type": 0,
+      "url": "./xxxx.txt",
+      "playerType": 2,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://x.xinsite.top:5688/index.php?ch={name}&date={date}",
+      "logo": "http://x.xinsite.top/tvlogo/{name}.png",
+      "timeout": 0,
+      "catchup": {
+        "type": "append",
+        "source": "?livemode=4&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+      },
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "卫视直播-IJK",
+      "type": 0,
+      "url": "./xxxx.txt",
+      "playerType": 1,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://x.xinsite.top:5688/index.php?ch={name}&date={date}",
+      "logo": "http://x.xinsite.top/tvlogo/{name}.png",
+      "timeout": 0,
+      "catchup": {
+        "type": "append",
+        "source": "?livemode=4&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+      },
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "卫视直播2",
+      "type": 0,
+      "url": "./xxxx2.txt",
+      "playerType": 2,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://x.xinsite.top:5688/index.php?ch={name}&date={date}",
+      "logo": "http://x.xinsite.top/tvlogo/{name}.png",
+      "timeout": 0,
+      "catchup": {
+        "type": "append",
+        "source": "?livemode=4&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+      },
+      "boot": false,
+      "pass": false
+    },
+    {
+      "name": "卫视直播2-IJK",
+      "type": 0,
+      "url": "./xxxx2.txt",
+      "playerType": 1,
+      "ua": "okHttp/Mod-1.5.0.0",
+      "epg": "http://x.xinsite.top:5688/index.php?ch={name}&date={date}",
+      "logo": "http://x.xinsite.top/tvlogo/{name}.png",
+      "timeout": 0,
+      "catchup": {
+        "type": "append",
+        "source": "?livemode=4&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+      },
+      "boot": false,
+      "pass": false
+    }
 ]
